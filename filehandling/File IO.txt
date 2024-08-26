@@ -1,0 +1,9 @@
+Mode of Operations:
+
+1. w - To create a new file (It overwrites if the file already exists)
+2. r - To read a file 
+3. a - To append (to add to the existing file)
+4. x - Exclusive creation; fails if file already exists
+5. t - text mode (default mode)
+6. b - binary mode
+7. + - Performs the same action like append (a)

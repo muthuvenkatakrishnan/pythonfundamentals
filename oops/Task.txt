@@ -1,0 +1,5 @@
+Identify the objects and write the appropriate python code
+
+1. Conductor issues ticket by taking money and destination details from the passenger
+2. Ram reads Bible
+3. Vicky rides a horse

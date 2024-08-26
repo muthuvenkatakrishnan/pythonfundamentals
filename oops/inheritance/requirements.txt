@@ -1,0 +1,6 @@
+Create an application called photoshop
+create a method called open_file that takes a file as input
+create a class called SysFiles and 3 subclasses that inherits from SysFiles
+pass the object of the sub classes to the open_file method such that
+when you call the display method of the class, it will give different output based 
+on the object that is passed.
