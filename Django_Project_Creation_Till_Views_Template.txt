@@ -1,0 +1,37 @@
+1. Create the Virtual Env
+2. Activate the Virtual Env
+3. Install django
+4. Create Project
+5. Create App
+6. Create a folder called template inside the App
+7. Create a html page inside the folder template
+8. Add the necessary action method in views.py present in App
+	from django.shortcuts import render
+	from django.http import HttpResponse
+	from django.template import loader
+
+	def function_name(request):
+    		tmplt = loader.get_template('filename.html')
+    		return HttpResponse(tmplt.render())
+9. Create a urls.py file in the App
+
+	from django.urls import path
+	from . import views
+
+	urlpatterns = [
+		    path('function_name/',views.function_name,name='function_name'),
+	]
+10. Update settings.py to include the App name in the INSTALLED_APPS list
+11. Update the urls.py in the Project
+	from django.contrib import admin
+	from django.urls import path, include
+
+	urlpatterns = [
+		path('',include('appname.urls')),
+    		path('admin/', admin.site.urls),
+	]
+12. Open the terminal and navigate till the project folder where you can find the mange.py file
+13. Run the following commands
+	python manage.py makemigration
+	python manage.py migrate
+14. python manage.py runserver
